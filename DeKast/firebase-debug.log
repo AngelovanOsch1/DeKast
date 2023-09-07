@@ -1,0 +1,246 @@
+[debug] [2023-09-07T14:23:38.978Z] ----------------------------------------------------------------------
+[debug] [2023-09-07T14:23:38.980Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Angel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-09-07T14:23:38.981Z] CLI Version:   12.5.2
+[debug] [2023-09-07T14:23:38.981Z] Platform:      win32
+[debug] [2023-09-07T14:23:38.981Z] Node Version:  v18.17.1
+[debug] [2023-09-07T14:23:38.982Z] Time:          Thu Sep 07 2023 16:23:38 GMT+0200 (Central European Summer Time)
+[debug] [2023-09-07T14:23:38.982Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-07T14:23:38.990Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-07T14:23:38.991Z] > authorizing via signed-in user (oschangelo@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Angel\Desktop\DeKast-Git\DeKast\DeKast
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-07T14:24:21.530Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-09-07T14:24:22.653Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-09-07T14:24:22.654Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project dekast-89494 (DeKast) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-09-07T14:24:24.276Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-09-07T14:24:24.276Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/dekast-89494
+[debug] [2023-09-07T14:24:25.485Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/firebasedatabase.googleapis.com 200
+[debug] [2023-09-07T14:24:25.485Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-09-07T14:24:25.488Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/dekast-89494/locations/-/instances/dekast-89494-default-rtdb [none]
+[debug] [2023-09-07T14:24:26.815Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/dekast-89494/locations/-/instances/dekast-89494-default-rtdb 200
+[debug] [2023-09-07T14:24:26.815Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/dekast-89494/locations/-/instances/dekast-89494-default-rtdb {"name":"projects/194514525090/locations/europe-west1/instances/dekast-89494-default-rtdb","project":"projects/194514525090","databaseUrl":"https://dekast-89494-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-09-07T14:24:34.834Z] >>> [apiv2][query] GET https://dekast-89494-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-09-07T14:24:35.569Z] <<< [apiv2][status] GET https://dekast-89494-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-09-07T14:24:35.570Z] <<< [apiv2][body] GET https://dekast-89494-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for dekast-89494-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-09-07T14:24:35.578Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/firestore.googleapis.com [none]
+[debug] [2023-09-07T14:24:35.579Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/firestore.googleapis.com x-goog-quota-user=projects/dekast-89494
+[debug] [2023-09-07T14:24:37.665Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/firestore.googleapis.com 200
+[debug] [2023-09-07T14:24:37.665Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/firestore.googleapis.com [omitted]
+[debug] [2023-09-07T14:24:37.666Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/dekast-89494/databases/(default) [none]
+[debug] [2023-09-07T14:24:38.893Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/dekast-89494/databases/(default) 200
+[debug] [2023-09-07T14:24:38.894Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/dekast-89494/databases/(default) {"name":"projects/dekast-89494/databases/(default)","uid":"e8e212c9-e78a-4da3-ab19-95d5e27bc0cd","createTime":"2023-09-07T14:22:03.410627Z","updateTime":"2023-09-07T14:22:03.410627Z","locationId":"europe-west3","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-09-07T14:22:03.410627Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"h","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IO3Vt/bZmIEDMIO83LjZmIED"}
+[debug] [2023-09-07T14:24:38.894Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-09-07T14:24:38.895Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-07T14:24:38.895Z] > authorizing via signed-in user (oschangelo@gmail.com)
+[debug] [2023-09-07T14:24:38.895Z] [iam] checking project dekast-89494 for permissions ["firebase.projects.get"]
+[debug] [2023-09-07T14:24:38.897Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dekast-89494:testIamPermissions [none]
+[debug] [2023-09-07T14:24:38.897Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dekast-89494:testIamPermissions x-goog-quota-user=projects/dekast-89494
+[debug] [2023-09-07T14:24:38.897Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dekast-89494:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-07T14:24:40.060Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dekast-89494:testIamPermissions 200
+[debug] [2023-09-07T14:24:40.060Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dekast-89494:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-09-07T14:24:43.493Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/dekast-89494/releases pageSize=10&pageToken=
+[debug] [2023-09-07T14:24:45.037Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/dekast-89494/releases 200
+[debug] [2023-09-07T14:24:45.038Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/dekast-89494/releases {"releases":[{"name":"projects/dekast-89494/releases/cloud.firestore","rulesetName":"projects/dekast-89494/rulesets/4253926b-7b64-4540-8d76-d3f5b390e9d0","createTime":"2023-09-07T14:22:08.268856Z","updateTime":"2023-09-07T14:22:08.268856Z"}]}
+[debug] [2023-09-07T14:24:45.038Z] Found ruleset: projects/dekast-89494/rulesets/4253926b-7b64-4540-8d76-d3f5b390e9d0
+[debug] [2023-09-07T14:24:45.039Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/dekast-89494/rulesets/4253926b-7b64-4540-8d76-d3f5b390e9d0 [none]
+[debug] [2023-09-07T14:24:46.055Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/dekast-89494/rulesets/4253926b-7b64-4540-8d76-d3f5b390e9d0 200
+[debug] [2023-09-07T14:24:46.055Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/dekast-89494/rulesets/4253926b-7b64-4540-8d76-d3f5b390e9d0 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-09-07T14:24:48.808Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/dekast-89494/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-09-07T14:24:48.814Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/dekast-89494/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-09-07T14:24:49.053Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/dekast-89494/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-09-07T14:24:49.053Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/dekast-89494/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-09-07T14:24:49.055Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/dekast-89494/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-09-07T14:24:49.055Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/dekast-89494/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/dekast-89494/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-09-07T14:24:49.062Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-07T14:24:49.063Z] > authorizing via signed-in user (oschangelo@gmail.com)
+[debug] [2023-09-07T14:24:49.063Z] [iam] checking project dekast-89494 for permissions ["firebase.projects.get"]
+[debug] [2023-09-07T14:24:49.064Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dekast-89494:testIamPermissions [none]
+[debug] [2023-09-07T14:24:49.064Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dekast-89494:testIamPermissions x-goog-quota-user=projects/dekast-89494
+[debug] [2023-09-07T14:24:49.064Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dekast-89494:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-07T14:24:49.841Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dekast-89494:testIamPermissions 200
+[debug] [2023-09-07T14:24:49.842Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dekast-89494:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-07T14:24:49.842Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-09-07T14:24:49.842Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/dekast-89494
+[debug] [2023-09-07T14:24:49.849Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-09-07T14:24:49.849Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/dekast-89494
+[debug] [2023-09-07T14:24:50.781Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/cloudfunctions.googleapis.com 200
+[debug] [2023-09-07T14:24:50.781Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-09-07T14:24:50.782Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-09-07T14:24:50.782Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/dekast-89494
+[debug] [2023-09-07T14:24:51.257Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/runtimeconfig.googleapis.com 200
+[debug] [2023-09-07T14:24:51.258Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-09-07T14:24:52.718Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-09-07T14:24:52.718Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-09-07T14:25:02.732Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-09-07T14:25:02.733Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/dekast-89494
+[debug] [2023-09-07T14:25:04.453Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/cloudfunctions.googleapis.com 200
+[debug] [2023-09-07T14:25:04.454Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/dekast-89494/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-09-07T14:27:14.631Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-09-07T14:27:15.847Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-09-07T14:27:15.848Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.3.1","browserURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.tgz"},"live":{"version":"10.3","browserURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.3.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.3.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.3.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.3.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.3.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Angel\Desktop\DeKast-Git\DeKast 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=589191568&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-09-07T14:27:23.827Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-09-07T14:27:23.828Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-09-07T14:27:24.141Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-09-07T14:27:24.142Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-09-07T14:27:24.156Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-09-07T14:27:24.488Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-09-07T14:27:24.489Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"AngelovanOsch1","id":99641678,"node_id":"U_kgDOBfBpTg","avatar_url":"https://avatars.githubusercontent.com/u/99641678?v=4","gravatar_id":"","url":"https://api.github.com/users/AngelovanOsch1","html_url":"https://github.com/AngelovanOsch1","followers_url":"https://api.github.com/users/AngelovanOsch1/followers","following_url":"https://api.github.com/users/AngelovanOsch1/following{/other_user}","gists_url":"https://api.github.com/users/AngelovanOsch1/gists{/gist_id}","starred_url":"https://api.github.com/users/AngelovanOsch1/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/AngelovanOsch1/subscriptions","organizations_url":"https://api.github.com/users/AngelovanOsch1/orgs","repos_url":"https://api.github.com/users/AngelovanOsch1/repos","events_url":"https://api.github.com/users/AngelovanOsch1/events{/privacy}","received_events_url":"https://api.github.com/users/AngelovanOsch1/received_events","type":"User","site_admin":false,"name":"Angelo van Osch","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":21,"public_gists":0,"followers":1,"following":0,"created_at":"2022-02-14T08:00:00Z","updated_at":"2023-09-05T12:26:51Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":153335,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as AngelovanOsch1 
+[info] 
+[debug] [2023-09-07T14:27:46.139Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-09-07T14:27:47.513Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-09-07T14:27:47.513Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-09-07T14:27:50.698Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-09-07T14:27:51.504Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-09-07T14:27:51.504Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-09-07T14:27:52.308Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-09-07T14:27:53.250Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-09-07T14:27:53.250Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-09-07T14:28:25.802Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/AngelovanOsch1/DeKast.git/actions/secrets/public-key type=owner
+[debug] [2023-09-07T14:28:26.943Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/AngelovanOsch1/DeKast.git/actions/secrets/public-key 404
+[debug] [2023-09-07T14:28:26.944Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/AngelovanOsch1/DeKast.git/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-09-07T14:28:30.909Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/AngelovanOsch1/DeKast.git/actions/secrets/public-key type=owner
+[debug] [2023-09-07T14:28:31.588Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/AngelovanOsch1/DeKast.git/actions/secrets/public-key 404
+[debug] [2023-09-07T14:28:31.588Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/AngelovanOsch1/DeKast.git/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-09-07T14:28:36.320Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/AngelovanOsch1/DeKast.gihttps://github.com/AngelovanOsch1/DeKast.git/actions/secrets/public-key type=owner
+[debug] [2023-09-07T14:28:37.318Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/AngelovanOsch1/DeKast.gihttps://github.com/AngelovanOsch1/DeKast.git/actions/secrets/public-key 404
+[debug] [2023-09-07T14:28:37.318Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/AngelovanOsch1/DeKast.gihttps://github.com/AngelovanOsch1/DeKast.git/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-09-07T14:29:27.241Z] >>> [apiv2][query] GET https://api.github.com/repos/https://github.com/AngelovanOsch1/DeKast.gihttps://github.com/AngelovanOsch1/DeKast.git/actions/secrets/public-key type=owner
+[debug] [2023-09-07T14:29:28.077Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-09-07T14:29:28.214Z] <<< [apiv2][status] GET https://api.github.com/repos/https://github.com/AngelovanOsch1/DeKast.gihttps://github.com/AngelovanOsch1/DeKast.git/actions/secrets/public-key 404
+[debug] [2023-09-07T14:29:28.214Z] <<< [apiv2][body] GET https://api.github.com/repos/https://github.com/AngelovanOsch1/DeKast.gihttps://github.com/AngelovanOsch1/DeKast.git/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-09-07T14:29:28.487Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-09-07T14:29:28.488Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
