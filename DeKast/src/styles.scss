@@ -1,4 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+h1,
+h2,
+h3,
+h4,
+h4 {
+  margin: 0;
+  padding: 0;
+  font-family: interBold;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-family: interRegular;
+}
+
+@font-face {
+  font-family: interBlack;
+  src: url(assets/fonts/Inter-Black.ttf);
+}
+
+@font-face {
+  font-family: interBold;
+  src: url(assets/fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: interRegular;
+  src: url(assets/fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: interMedium;
+  src: url(assets/fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+  font-family: interLight;
+  src: url(assets/fonts/Inter-Light.ttf);
+}
+
+@font-face {
+  font-family: interThin;
+  src: url(assets/fonts/Inter-Thin.ttf);
+}
+
+:root {
+  --color1: #f5f1e3;
+  --color2: #2f242c;
+  --color3: #191518;
+  --primary: #1b9aaa;
+}
