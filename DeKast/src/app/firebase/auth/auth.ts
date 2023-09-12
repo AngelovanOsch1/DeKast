@@ -1,12 +1,12 @@
-// import {
-//   getAuth,
-//   createUserWithEmailAndPassword,
-//   signInWithEmailAndPassword,
-//   updatePassword,
-//   reauthenticateWithCredential,
-//   signOut,
-//   onAuthStateChanged,
-// } from 'firebase/auth';
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updatePassword,
+  reauthenticateWithCredential,
+  signOut,
+  onAuthStateChanged,
+} from 'firebase/auth';
 
 // const auth = getAuth();
 // createUserWithEmailAndPassword(auth, email, password)
