@@ -11,6 +11,10 @@ section.login{
         box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
         z-index: 5;
 
+        @media (max-width: 1400px) {
+            width: 60%;
+            padding: 50px 90px;
+        }
         .titel{
             font-family: interBlack;
             text-transform: uppercase;
@@ -114,6 +118,11 @@ section.login{
         background: linear-gradient(to bottom, var(--primary) 30%, var(--primary-50));
         position: relative;
         color: #fff;
+
+        @media (max-width: 1400px) {
+            width: 40%;
+            padding: 50px 90px;
+        }
         &::before{
             content: '';
             position: absolute;
@@ -128,12 +137,23 @@ section.login{
         img{
           margin-bottom: 50px;
         }
-        h1{ font-family: interBlack; font-size: 50px; }
+        h1{ 
+            font-family: interBlack; 
+            font-size: 50px; 
+            @media (max-width: 1200px) {
+                font-size: 40px;
+            }
+        }
         p{ 
             font-family: interLight;
             font-size: 25px; 
             width: 70%; 
             min-width: 400px;
+            @media (max-width: 1200px) {
+                font-size: 22px;
+                min-width: none;
+
+            }
         }
     }
 }
