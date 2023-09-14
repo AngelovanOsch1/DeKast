@@ -1,0 +1,139 @@
+
+
+section.login{
+    display: flex;
+    height: 100vh;
+    .form-side{
+        width: 35%;
+        min-width: 400px;
+        padding: 70px 120px;
+        background-color: var(--color1);
+        box-shadow: 5px 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 5;
+
+        .titel{
+            font-family: interBlack;
+            text-transform: uppercase;
+            font-size: 55px;
+            word-spacing: 7.5px;
+            letter-spacing: 1px;
+        }
+        .secondary-title{
+            margin-top: 100px;
+            margin-bottom: 50px;
+            font-size: 35px;
+            padding-bottom: 7px;
+            border-bottom: 3px solid #0001;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .input-con{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                margin-bottom: 20px;
+                label{ 
+                    font-weight: 600;
+                    font-size: 28px;
+                    color: var(--primary);
+                }
+                input{
+                    border: none;
+                    outline: none;
+                    background: none;
+                    padding: 10px 0;
+                    font-size: 20px;
+                    border-bottom: 2px solid var(--primary);
+                    color: var(--color2);
+                }
+            }
+            a.reset-pass{
+                margin-left: auto;
+                font-size: 15px;
+                color: var(--color2);
+                font-family: interBold;
+                &:hover{opacity: 0.6;}
+            }
+            .button-container{
+                margin-top: 100px;
+                display: flex;
+                gap: 20px;
+                input[type="submit"]{
+                    background-color: var(--primary);
+                    border-radius: 5px;
+                    border: none;
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding: 10px 25px;
+                    cursor: pointer;
+                    transition: 0.5s ease;
+                    &:hover{
+                        background-color: var(--color2);
+                    }
+                }
+                a.ghost-btn{
+                    background-color: none;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    border: 2px solid var(--color2);
+                    color: var(--color2);
+                    font-size: 18px;
+                    font-weight: 600;
+                    padding: 10px 25px;
+                    position: relative;
+                    overflow: hidden;
+                    transition: 0.5s ease;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0%;
+                        height: 100%;
+                        background-color: var(--color2);
+                        transition: all 0.3s ease-in-out;
+                        z-index: -1;
+                    }
+                    &:hover{
+                        color: #fff;
+                        z-index: 1;
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .side-background {
+        width: 65%;
+        padding: 70px 120px;
+        background: linear-gradient(to bottom, var(--primary) 30%, var(--primary-50));
+        position: relative;
+        color: #fff;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0; right: 0; top: 0; bottom: 0;
+            z-index: -1;
+            background-image: url(../../assets/images/CatStretching.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        >*{ margin-bottom: 20px; }
+        img{
+          margin-bottom: 50px;
+        }
+        h1{ font-family: interBlack; font-size: 50px; }
+        p{ 
+            font-family: interLight;
+            font-size: 25px; 
+            width: 70%; 
+            min-width: 400px;
+        }
+    }
+}
