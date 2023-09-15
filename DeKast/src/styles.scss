@@ -23,6 +23,10 @@ div{
   font-family: interRegular;
   color: var(--color2);
 }
+::selection{
+  background-color: var(--primary);
+  color: #fff;
+}
 
 @font-face {
   font-family: interBlack;
