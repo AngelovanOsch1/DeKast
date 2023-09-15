@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators, AbstractControl, ValidatorFn   } from '@angular/forms'
 import { ToastService } from '../toast.service';
+import { createUser } from '../firebase/auth/auth';
 
 
 @Component({
@@ -30,9 +31,14 @@ export class RegisterComponent implements OnInit {
       // Add logic to create an account here
   
       // Assuming the account creation failed (for example, due to a database error)
-      this.toastService.show('Oeps, er is iets misgegaan. Probeer het later nog eens');
+
+      const email = this.registrationForm.controls.email.value!;
+      const password = this.registrationForm.controls.password.value!;
+   
+      createUser(email, password);
+
     } else {
-      alert('Form is not valid. Please check the fields.');
+      this.toastService.show('Form is not valid. Please check the fields.');
     }
   }
 
