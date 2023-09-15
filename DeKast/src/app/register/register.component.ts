@@ -38,7 +38,7 @@ export class RegisterComponent implements OnInit {
       createUser(email, password);
 
     } else {
-      this.toastService.show('Form is not valid. Please check the fields.');
+      this.toastService.show('De aanvraag is niet geldig. Controleer de velden.');
     }
   }
 
