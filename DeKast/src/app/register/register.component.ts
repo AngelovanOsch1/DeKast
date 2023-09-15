@@ -26,7 +26,7 @@ export class RegisterComponent implements OnInit {
 
   callingFunction() {
     if (this.registrationForm.valid) {
-      console.log(this.registrationForm.value);
+      
       // Add logic to create an account here
   
       // Assuming the account creation failed (for example, due to a database error)
