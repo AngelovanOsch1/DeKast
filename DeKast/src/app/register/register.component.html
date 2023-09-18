@@ -8,12 +8,12 @@
 </head>
 
 <body>
-  <div class="container mt-4">
+  <div class="container">
     <form [formGroup]="registrationForm" (ngSubmit)="callingFunction()">
-      <h3 class="mb-1">Registreer</h3>
+      <h3>Registreer</h3>
 
-      <div class="mb-3">
-        <label for="firstName" class="form-label">Voornaam:</label>
+      <div>
+        <label class="form-label">Voornaam:</label>
         <input type="text" formControlName="firstName" class="form-control">
         <div *ngIf="registrationForm.get('firstName')?.hasError('required') && registrationForm.get('firstName')?.touched"
           class="error">
@@ -21,8 +21,8 @@
         </div>
       </div>
 
-      <div class="mb-3">
-        <label for="lastName" class="form-label">Achternaam:</label>
+      <div>
+        <label class="form-label">Achternaam:</label>
         <input type="text" formControlName="lastName" class="form-control">
         <div *ngIf="registrationForm.get('lastName')?.hasError('required') && registrationForm.get('lastName')?.touched"
           class="error">
@@ -30,8 +30,8 @@
         </div>
       </div>
 
-      <div class="mb-3">
-        <label for="email" class="form-label">Email:</label>
+      <div>
+        <label class="form-label">Email:</label>
         <input type="email" formControlName="email" class="form-control">
         <div *ngIf="registrationForm.get('email')?.hasError('required') && registrationForm.get('email')?.touched"
           class="error">
@@ -43,13 +43,13 @@
         </div>
       </div>
 
-      <div class="mb-3">
-        <label for="phoneNumber" class="form-label">Telefoonnummer:</label>
+      <div>
+        <label class="form-label">Telefoonnummer:</label>
         <input type="text" formControlName="phoneNumber" class="form-control">
       </div>
 
-      <div class="mb-3">
-        <label for="password" class="form-label">Wachtwoord:</label>
+      <div>
+        <label class="form-label">Wachtwoord:</label>
         <input type="password" formControlName="password" class="form-control">
         <div *ngIf="registrationForm.get('password')?.hasError('required') && registrationForm.get('password')?.touched"
           class="error">
@@ -61,8 +61,8 @@
         </div>
       </div>
 
-      <div class="mb-3">
-        <label for="repeatPassword" class="form-label">Herhaal wachtwoord:</label>
+      <div>
+        <label class="form-label">Herhaal wachtwoord:</label>
         <input type="password" formControlName="repeatPassword" class="form-control">
         <div *ngIf="registrationForm.get('repeatPassword')?.hasError('required') && registrationForm.get('repeatPassword')?.touched"
           class="error">
