@@ -1,1 +1,15 @@
-<h1>TEST</h1>
+
+<div *ngIf="showHeaderAndFooter">
+<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+<nav>
+  <ul>
+    <li><a routerLink="/register" routerLinkActive="active" ariaCurrentWhenActive="page">Register component</a></li>
+  </ul>
+</nav>
+</div>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet ></router-outlet>
+
+
+
+

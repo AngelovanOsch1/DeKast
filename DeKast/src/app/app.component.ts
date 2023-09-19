@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'DeKast';
+  showHeaderAndFooter: boolean = true;
 
-  constructor() {}
 
-  async ngOnInit(): Promise<any> {}
+
+  constructor(private router: Router) {}
+
+  async ngOnInit(): Promise<any> {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        // Exclude the header and footer on specific pages
+        const excludePages = ['/login', '/register'];
+        this.showHeaderAndFooter = !excludePages.includes(event.url);
+      }
+    });
+  }
+
+  goToRegister() {
+    this.router.navigate(['/register']);
+  }
+
 }

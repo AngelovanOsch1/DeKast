@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registratie formulier</title>
+</head>
+
+<body>
+  <div class="container">
+    <form [formGroup]="registrationForm" (ngSubmit)="callingFunction()">
+      <h3>Registreer</h3>
+
+      <div>
+        <label class="form-label">Voornaam:</label>
+        <input type="text" formControlName="firstName" class="form-control">
+        <div *ngIf="registrationForm.get('firstName')?.hasError('required') && registrationForm.get('firstName')?.touched"
+          class="error">
+          Dit veld is verplicht
+        </div>
+      </div>
+
+      <div>
+        <label class="form-label">Achternaam:</label>
+        <input type="text" formControlName="lastName" class="form-control">
+        <div *ngIf="registrationForm.get('lastName')?.hasError('required') && registrationForm.get('lastName')?.touched"
+          class="error">
+          Dit veld is verplicht
+        </div>
+      </div>
+
+      <div>
+        <label class="form-label">Email:</label>
+        <input type="email" formControlName="email" class="form-control">
+        <div *ngIf="registrationForm.get('email')?.hasError('required') && registrationForm.get('email')?.touched"
+          class="error">
+          Dit veld is verplicht
+        </div>
+        <div *ngIf="registrationForm.get('email')?.hasError('email') && registrationForm.get('email')?.touched"
+          class="error">
+          Ongeldig E-mailadres
+        </div>
+      </div>
+
+      <div>
+        <label class="form-label">Telefoonnummer:</label>
+        <input type="text" formControlName="phoneNumber" class="form-control">
+      </div>
+
+      <div>
+        <label class="form-label">Wachtwoord:</label>
+        <input type="password" formControlName="password" class="form-control">
+        <div *ngIf="registrationForm.get('password')?.hasError('required') && registrationForm.get('password')?.touched"
+          class="error">
+          Wachtwoord is verplicht
+        </div>
+        <div *ngIf="registrationForm.get('password')?.hasError('minlength') && registrationForm.get('password')?.touched"
+          class="error">
+          Wachtwoord moet minimaal 5 tekens bevatten
+        </div>
+      </div>
+
+      <div>
+        <label class="form-label">Herhaal wachtwoord:</label>
+        <input type="password" formControlName="repeatPassword" class="form-control">
+        <div *ngIf="registrationForm.get('repeatPassword')?.hasError('required') && registrationForm.get('repeatPassword')?.touched"
+          class="error">
+          Dit veld is verplicht
+        </div>
+        <div *ngIf="registrationForm.get('repeatPassword')?.value !== registrationForm.get('password')?.value && registrationForm.get('repeatPassword')?.touched"
+          class="error">
+          Wachtwoorden komen niet overheen
+        </div>
+      </div>
+
+      <button [disabled]="registrationForm.invalid" type="submit" class="btn btn-primary">Aanmaken</button>
+    </form>
+  </div>
+</body>
+
+</html>

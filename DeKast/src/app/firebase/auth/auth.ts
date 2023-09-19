@@ -1,25 +1,19 @@
-// import {
-//   getAuth,
-//   createUserWithEmailAndPassword,
-//   signInWithEmailAndPassword,
-//   updatePassword,
-//   reauthenticateWithCredential,
-//   signOut,
-//   onAuthStateChanged,
-// } from 'firebase/auth';
+import { auth } from '../firebase';
 
-// const auth = getAuth();
-// createUserWithEmailAndPassword(auth, email, password)
-//   .then((userCredential) => {
-//     // Signed in
-//     const user = userCredential.user;
-//     // ...
-//   })
-//   .catch((error) => {
-//     const errorCode = error.code;
-//     const errorMessage = error.message;
-//     // ..
-//   });
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updatePassword,
+  reauthenticateWithCredential,
+  signOut,
+  onAuthStateChanged,
+} from 'firebase/auth';
+
+
+  export async function createUser(email: string, password: string) {
+  await createUserWithEmailAndPassword(auth, email, password)
+  }
 
 // signInWithEmailAndPassword(auth, email, password)
 //   .then((userCredential) => {
